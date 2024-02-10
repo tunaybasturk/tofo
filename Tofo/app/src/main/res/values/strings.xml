@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Tofo</string>
+    <string name="google_map_api_key">AIzaSyBDbmRRFNMmI6ClWdv9teKlRFUgNwjzSMg</string>
+    <string name="title_activity_anasayfa">Anasayfa</string>
+</resources>

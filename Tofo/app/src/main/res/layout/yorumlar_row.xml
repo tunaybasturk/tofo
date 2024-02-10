@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="200dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#A7B7B7"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:background="@color/white"
+                android:id="@+id/kullanici_resim"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                app:srcCompat="@drawable/anasayfa_bildirim_icon" />
+
+            <TextView
+                android:id="@+id/kullanici_isim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="10dp"
+                android:textColor="#FAFBFA"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:text="Emre KAHRAMAN" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tarih"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textColor="#FAFBFA"
+                android:layout_marginRight="10dp"
+                android:textSize="18dp"
+                android:text="01.01.2021" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F4F4F4"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/kisi_yorum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#B9B9B9"
+                android:padding="10dp"
+                android:textSize="17dp"
+                android:text="Çok yerde kahve içtim ama bu kadar lezzetlisine denk gelmedim. Üstelik paket servis veriyorlar. Sanırım artık buranın bağımlısı olduk. Tebrik ederim harikasınız." />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

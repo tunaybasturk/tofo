@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Listeleme">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/arama_ikonu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="10dp"
+            app:srcCompat="@drawable/anasayfa_arama_icon" />
+
+        <EditText
+            android:id="@+id/arama_yapma"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="14dp"
+            android:background="@android:color/transparent"
+            android:hint="Arama Yap"
+            android:textColor="#0A8C9D"
+            android:textColorHint="#369FAD"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/ayarlar"
+            android:layout_width="40dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.989"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/secim_ayarlar_icon"
+            app:tint = "#0A8C9D"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="4dp"
+        android:background="#0A8C9D"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout1">
+
+        <ImageView
+            android:id="@+id/bildirim_alma"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:background="@color/white"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/anasayfa_bildirim_icon" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/urun_ismi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="Türk Kahvesi"
+                android:textColor="#FFFFFE" />
+
+            <TextView
+                android:id="@+id/bildirim_yazisi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:text="ile ilgili bildirimleri almak istiyorum"
+                android:textColor="#FFFFFE" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/bildirim_circle"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="90dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                app:civ_border_width="3dp"
+                app:civ_border_color="@color/white"
+                android:src="@drawable/filtreler_empty_circle"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="590dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout8" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#F5F5F5"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/anasayfa_icon"
+            android:layout_width="2dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+
+            android:layout_weight="20"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/anasayfa_home_icon" />
+
+
+        <ImageView
+            android:id="@+id/arama_icon"
+            android:layout_width="2dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center"
+            android:layout_weight="20"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/anasayfa_home_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/anasayfa_arama_icon" />
+
+        <ImageView
+            android:id="@+id/kamera_icon"
+            android:layout_width="2dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="20"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/icecekler"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/anasayfa_kamera_icon" />
+
+        <ImageView
+            android:id="@+id/widget_icon"
+            android:layout_width="2dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center"
+            android:layout_weight="20"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/kamera_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/anasayfa_widget_icon"
+            app:tint="#0D8C9D" />
+
+        <ImageView
+            android:id="@+id/kullanici_icon"
+            android:layout_width="2dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="20"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/widget_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/anasayfa_profil_icon" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Filtreler">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F5F5F5"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="91dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:paddingBottom="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/tofo_anasayfa_logo" />
+
+        <ImageView
+            android:id="@+id/filtreler_bildirimler"
+            android:layout_width="42dp"
+            android:layout_height="29dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.989"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/anasayfa_bildirim_icon" />
+        <ImageView
+            android:id="@+id/filtreler_geri_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:layout_marginStart="6dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.015"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.523"
+            app:srcCompat="@drawable/bildirimler_geri_icon" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="413dp"
+        android:layout_height="50dp"
+        android:background="#0D8C9D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/konum_degistir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Konum Değiştir"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.264"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.243" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Kullancı konumu"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.248"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="44dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="15dp"
+            android:background="#FFFFFF"
+            android:paddingTop="10dp"
+            android:paddingBottom="4dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/filtreler1_marker" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/Linearlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+
+        <TextView
+            android:id="@+id/secenekler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textColor="#0D8C9D"
+            android:layout_marginTop="10dp"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:text="Seçenekler"
+            />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/Linearlayout2"
+        app:layout_constraintTop_toBottomOf="@id/Linearlayout1"
+        android:background="#A5A5A5"
+        />
+    <LinearLayout
+        android:id="@id/Linearlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/Linearlayout1">
+        <TextView
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:id="@+id/en_yakin_listeleme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textColor="#A5A5A5"
+            android:textSize="17dp"
+            android:text="En yakında olanları listele"
+            />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="17dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:id="@+id/en_yakin_listeleme_circle"
+            android:src="@drawable/filtreler_empty_circle"
+            app:tint = "#DEDEDE"
+            ></ImageView>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Linearlayout2"
+        android:background="#A5A5A5"
+        />
+    <LinearLayout
+        android:id="@id/Linearlayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/Linearlayout2">
+        <TextView
+            android:id="@+id/puan_en_yuksek_listeleme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textColor="#A5A5A5"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:textSize="17dp"
+            android:text="Puanı en yüksek olanları listele"
+            />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="17dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:id="@+id/puan_en_yuksek_listeleme_circle"
+            android:src="@drawable/filtreler_empty_circle"
+            app:tint ="#DEDEDE"
+            ></ImageView>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Linearlayout3"
+        android:background="#A5A5A5"
+        />
+    <LinearLayout
+        android:id="@id/Linearlayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/Linearlayout3">
+        <TextView
+            android:id="@+id/ziyaret_en_cok_listele"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textColor="#A5A5A5"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:textSize="17dp"
+            android:text="En çok ziyaret olanları listele"
+            />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="17dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:id="@+id/ziyaret_en_cok_listeleme_circle"
+            android:src="@drawable/filtreler_empty_circle"
+            app:tint = "#DEDEDE"
+            ></ImageView>
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#A5A5A5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Linearlayout4" />
+    <LinearLayout
+        android:id="@id/Linearlayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/Linearlayout4">
+        <TextView
+            android:id="@+id/indirim_en_cok_listele"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textColor="#A5A5A5"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:textSize="17dp"
+            android:text="İndirim oranlarına göre listele"
+            />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="17dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:id="@+id/indirim_en_cok_listeleme_circle"
+            android:src="@drawable/filtreler_empty_circle"
+            app:tint = "#DEDEDE"
+            ></ImageView>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Linearlayout5"
+        android:background="#A5A5A5"
+        />
+
+    <LinearLayout
+        android:id="@+id/Linearlayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/Linearlayout5">
+
+
+    <TextView
+        android:id="@+id/mesafe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Mesafe"
+        android:textColor="#0D8C9D"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="446dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Linearlayout7"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#91C8CF"
+        android:layout_marginTop="10dp"
+        android:weightSum="100"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Linearlayout6">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_gravity="center"
+            android:src="@drawable/anasayfa_home_icon"
+            >
+        </ImageView>
+        <View
+            android:id="@+id/line1"
+            android:layout_marginStart="5dp"
+            android:layout_width="15dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            />
+        <ImageView
+            android:id="@+id/mesafe_circle_1"
+            android:layout_width="17dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/filtreler_empty_circle"
+            app:tint="@color/white"
+            >
+        </ImageView>
+        <View
+            android:id="@+id/line2"
+            android:layout_width="15dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            />
+        <ImageView
+            android:id="@+id/mesafe_circle_2"
+            android:layout_width="17dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/filtreler_empty_circle"
+            app:tint="@color/white"
+            >
+        </ImageView>
+        <View
+            android:id="@+id/line3"
+            android:layout_width="15dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            />
+        <ImageView
+            android:id="@+id/mesafe_circle_3"
+            android:layout_width="17dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/filtreler_empty_circle"
+            app:tint="@color/white"
+            >
+        </ImageView>
+        <View
+            android:id="@+id/line4"
+            android:layout_width="15dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            />
+        <ImageView
+            android:id="@+id/mesafe_circle_4"
+            android:layout_width="17dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/filtreler_empty_circle"
+            app:tint="@color/white"
+            >
+        </ImageView>
+        <View
+            android:id="@+id/line5"
+            android:layout_width="15dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            />
+        <ImageView
+            android:id="@+id/mesafe_circle_5"
+            android:layout_width="17dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/filtreler_empty_circle"
+            app:tint="@color/white"
+            >
+        </ImageView>
+        <View
+            android:id="@+id/line6"
+            android:layout_width="15dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            />
+        <ImageView
+            android:id="@+id/mesafe_circle_6"
+            android:layout_width="17dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/filtreler_empty_circle"
+            app:tint="@color/white"
+            >
+        </ImageView>
+        <View
+            android:id="@+id/line7"
+            android:layout_width="15dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            />
+        <ImageView
+            android:id="@+id/mesafe_circle_7"
+            android:layout_width="17dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/filtreler_empty_circle"
+            app:tint="@color/white"
+            >
+        </ImageView>
+        <View
+            android:id="@+id/line8"
+            android:layout_width="15dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            />
+        <ImageView
+            android:id="@+id/mesafe_circle_8"
+            android:layout_width="17dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/filtreler_empty_circle"
+            app:tint="@color/white"
+            >
+        </ImageView>
+        <View
+            android:id="@+id/line9"
+            android:layout_width="15dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            />
+        <ImageView
+            android:id="@+id/mesafe_circle_9"
+            android:layout_width="17dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/filtreler_empty_circle"
+            app:tint="@color/white"
+            >
+        </ImageView>
+        <View
+            android:id="@+id/line10"
+            android:layout_width="15dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            />
+        <ImageView
+            android:id="@+id/mesafe_circle_10"
+            android:layout_width="17dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/filtreler_empty_circle"
+            app:tint="@color/white"
+            >
+        </ImageView>
+        <View
+            android:id="@+id/line11"
+            android:layout_width="15dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            />
+        <ImageView
+            android:id="@+id/marker"
+            android:layout_marginStart="5dp"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/filtreler1_marker"
+        >
+    </ImageView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Linearlayout8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/Linearlayout7">
+
+
+        <TextView
+            android:id="@+id/fiyat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textColor="#0D8C9D"
+            android:layout_marginTop="10dp"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:text="Fiyat"
+            />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/Linearlayout8"
+        android:background="#A5A5A5"
+        />
+    <LinearLayout
+        android:id="@id/Linearlayout9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/Linearlayout8">
+        <TextView
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:id="@+id/min_fiyat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textColor="#A5A5A5"
+            android:textSize="17dp"
+            android:text="Min   :"
+            />
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/Linearlayout10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/Linearlayout9">
+        <TextView
+            android:id="@+id/max_fiyat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textColor="#A5A5A5"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:textSize="17dp"
+            android:text="Max  :"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#A5A5A5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Linearlayout10" />
+
+    <TextView
+        android:id="@+id/filtreleri_kaydet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Filtreleri Kaydet"
+        android:textColor="#0D8C9D"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Linearlayout10" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#F5F5F5"
+        android:layout_marginTop="45dp"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/anasayfa_icon"
+            android:layout_width="2dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+
+            android:layout_weight="20"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/anasayfa_home_icon" />
+
+
+        <ImageView
+            android:id="@+id/arama_icon"
+            android:layout_width="2dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center"
+            android:layout_weight="20"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/anasayfa_home_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/anasayfa_arama_icon" />
+
+        <ImageView
+            android:id="@+id/kamera_icon"
+            android:layout_width="2dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="20"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/icecekler"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/anasayfa_kamera_icon" />
+
+        <ImageView
+            android:id="@+id/widget_icon"
+            android:layout_width="2dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center"
+            android:layout_weight="20"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/kamera_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/anasayfa_widget_icon"
+            app:tint="#0D8C9D" />
+
+        <ImageView
+            android:id="@+id/kullanici_icon"
+            android:layout_width="2dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="20"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/widget_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/anasayfa_profil_icon" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
